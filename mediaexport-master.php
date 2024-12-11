@@ -5,7 +5,7 @@
  * Description: Export media library metadata with customizable options.
  * Version: 1.0
  * Author: Atif Syed
- * Author URI: https://github.com/iAtifSyed/
+ * Author URI: https://iatifsyed.github.io/
  * License: GPL2
  */
 
