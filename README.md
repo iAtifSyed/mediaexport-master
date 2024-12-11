@@ -30,11 +30,11 @@ MediaExport Master is a powerful WordPress plugin that allows you to export your
 
 1. **Admin Page UI**
 
-   ![Admin Page UI](screenshot-admin-ui.png)
+   ![Admin Page UI](https://raw.githubusercontent.com/iAtifSyed/mediaexport-master/refs/heads/main/MEM-1.png)
 
 2. **Exported CSV Sample**
 
-   ![Exported CSV](screenshot-exported-csv.png)
+   ![Exported CSV](https://raw.githubusercontent.com/iAtifSyed/mediaexport-master/refs/heads/main/MEM-2.png)
 
 ## Support & Feedback
 
