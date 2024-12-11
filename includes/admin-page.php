@@ -60,31 +60,50 @@ function mediaexport_master_render_admin_page() {
             </div>
 
             <!-- Sidebar -->
-            <aside class="col-span-1 bg-gray-50 p-4 rounded-lg shadow-md">
-                <h2 class="text-lg font-semibold mb-3">Want to Support?</h2>
-                <ul class="list-disc ml-4 space-y-2">
-                    <li><a href="https://iatifsyed.github.io/" class="text-blue-500 hover:underline">Hire me on a project</a></li>
-                    <li>
-                        <form action="https://www.paypal.com/donate" method="post" target="_blank">
-                            <button type="submit" class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">Buy me a Coffee</button>
-                        </form>
-                    </li>
-                </ul>
+     <aside class="col-span-1 bg-gray-50 p-4 rounded-lg shadow-md">
+    <!-- Support Section -->
+    <h2 class="text-lg font-semibold mb-3">Want to Support?</h2>
+    <ul class="list-disc ml-4 space-y-2">
+        <!-- Hire Me Link -->
+        <li><a href="https://iatifsyed.github.io" class="text-blue-500 hover:underline">Hire me on a project</a></li>
 
-                <h2 class="text-lg font-semibold mt-6 mb-3">Wanna Say Thanks?</h2>
-                <ul class="list-disc ml-4 space-y-2">
-                    <li><a href="#" class="text-blue-500 hover:underline">Leave a ★★★★★ rating</a></li>
-                    <li><a href="#" class="text-blue-500 hover:underline">Tweet me: @AtifSyed</a></li>
-                </ul>
+        <!-- PayPal Donation Button -->
+        <li>
+            <form action="https://www.paypal.com/donate" method="post" target="_blank">
+                <input type="hidden" name="business" value="atifsyedlive@gmail.com">
+                <input type="hidden" name="no_recurring" value="0">
+                <input type="hidden" name="item_name" value="Support MediaExport Master Plugin">
+                <input type="hidden" name="currency_code" value="USD">
+                <button type="submit" class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">Buy me a Coffee</button>
+            </form>
+        </li>
+    </ul>
 
-                <h2 class="text-lg font-semibold mt-6 mb-3">Got a Problem?</h2>
-                <ul class="list-disc ml-4 space-y-2">
-                    <li><a href="#" class="text-blue-500 hover:underline">Create Support Ticket</a></li>
-                    <li><a href="mailto:atifsyedlive@gmail.com" class="text-blue-500 hover:underline">Write me an Email</a></li>
-                </ul>
+    <!-- Thanks Section -->
+    <h2 class="text-lg font-semibold mt-6 mb-3">Wanna Say Thanks?</h2>
+    <ul class="list-disc ml-4 space-y-2">
+        <!-- Plugin Rating -->
+        <li><a href="https://wordpress.org/support/plugin/mediaexport-master/reviews/" class="text-blue-500 hover:underline">Leave a ★★★★★ rating</a></li>
 
-                <p class="text-sm text-gray-600 mt-6">Developed by: <a href="https://github.com/iAtifSyed" class="text-blue-500 hover:underline">Atif Syed</a></p>
-            </aside>
+        <!-- Twitter Handle -->
+        <li><a href="https://twitter.com/imAtifSyed" class="text-blue-500 hover:underline">Tweet me: @iamatifsyed</a></li>
+    </ul>
+
+    <!-- Problem Section -->
+    <h2 class="text-lg font-semibold mt-6 mb-3">Got a Problem?</h2>
+    <ul class="list-disc ml-4 space-y-2">
+        <!-- Support Ticket -->
+        <li><a href="https://github.io/support" class="text-blue-500 hover:underline">Create Support Ticket</a></li>
+
+        <!-- Email -->
+        <li><a href="mailto:aitfsyedlive@gmail.com" class="text-blue-500 hover:underline">Write me an Email</a></li>
+    </ul>
+
+    <!-- Developer Credit -->
+    <p class="text-sm text-gray-600 mt-6">Developed by: 
+        <a href="https://github.com/iAtifSyed" class="text-blue-500 hover:underline">Atif Syed</a>
+    </p>
+</aside>
         </div>
     </div>
     <?php
