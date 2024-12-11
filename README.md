@@ -51,10 +51,23 @@ Developed by: [Atif Syed](https://github.com/iAtifSyed)
 
 ## Changelog
 
-### 1.0.0
-- Initial release with customizable metadata export.
-- Filters for authors and export types.
-- Tailwind CSS integration for responsive UI.
+### 🎉 New Features:
+- 🎛️ **Metadata Selection**: Export custom metadata fields like ID, Title, URL, Alt Text, and more.
+- 👤 **Author Filtering**: Filter media exports by specific authors or all authors.
+- 📄 **Export Options**: Export data as a CSV file or display results directly in the admin interface.
+- 🌀 **Tailwind CSS Integration**: Responsive UI designed using the Tailwind CSS framework.
+- 🛠️ **Dynamic Sidebar**: Includes donation links, rating options, support links, and developer info.
+- 📜 **Wiki & Documentation**: Comprehensive guides for installation, features, and troubleshooting.
+
+### 🔧 Fixes & Optimizations:
+- Optimized plugin performance for smoother export processes.
+- Ensured compatibility with the latest WordPress version.
+
+---
+
+Let me know if you’d like to include more details or create additional sections like “Planned Updates” or “Known Issues”! 🎯
+
+
 
 ## License
 
