@@ -2,7 +2,7 @@
 /**
  * Plugin Name: MediaExport Master
  * Plugin URI: https://envisionlab.github.io/mediaexport-master
- * Description: Export media library metadata with customizable options.
+ * Description: MediaExport Master is a powerful WordPress plugin that allows you to export your media library data with customizable metadata fields and filters.
  * Version: 1.0
  * Author: Atif Syed
  * Author URI: https://iatifsyed.github.io/
