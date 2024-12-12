@@ -9,9 +9,9 @@ function mediaexport_master_handle_export() {
     // Verify nonce if added (security check).
     check_ajax_referer( 'mediaexport_nonce', 'security' );
     // Sanitize and retrieve form inputs.
-   $fields = isset( $_POST['fields'] ) ? array_map( 'sanitize_text_field', wp_unslash( $_POST['fields'] ) ) : [];
+   	$fields = isset( $_POST['fields'] ) ? array_map( 'sanitize_text_field', wp_unslash( $_POST['fields'] ) ) : [];
     $author = isset( $_POST['author'] ) ? sanitize_text_field( wp_unslash( $_POST['author'] ) ) : '';
-    $export_type     = isset( $_POST['export_type'] ) ? sanitize_text_field( $_POST['export_type'] ) : 'csv';
+	$export_type = isset( $_POST['export_type'] ) ? sanitize_text_field( wp_unslash( $_POST['export_type'] ) ) : 'csv';
 	
     // Fetch media library data based on selected fields and author filter.
     $query_args = [
