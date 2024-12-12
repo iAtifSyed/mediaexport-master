@@ -1,18 +1,5 @@
 # MediaExport Master
-=== MediaExport Master ===
-Contributors: iAtifSyed
-Tags: export media urls, export media ids links csv, export utilities, export media links csv
-Requires at least: 4.5
-Tested up to: 6.7
-Stable tag: 1.5
-Requires PHP: 7.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-An efficient media information extraction utility with CSV export option, suitable for several use-cases including migration and SEO.
-
-
-## == Description ==
 MediaExport Master is a powerful WordPress plugin that allows you to export your media library data with customizable metadata fields and filters. The plugin provides options to filter media items by author, select specific metadata fields, and export data as a CSV file or display it directly on-screen.
 
 
