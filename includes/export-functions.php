@@ -1,15 +1,18 @@
 <?php
-
+// Prevent direct access.
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
 // Handle the export request
 add_action( 'admin_post_mediaexport_master_export', 'mediaexport_master_handle_export' );
 function mediaexport_master_handle_export() {
     // Verify nonce if added (security check).
-    
+    check_ajax_referer( 'mediaexport_nonce', 'security' );
     // Sanitize and retrieve form inputs.
-    $selected_fields = isset( $_POST['fields'] ) ? array_map( 'sanitize_text_field', $_POST['fields'] ) : [];
-    $author          = isset( $_POST['author'] ) ? sanitize_text_field( $_POST['author'] ) : 'all';
+   $fields = isset( $_POST['fields'] ) ? array_map( 'sanitize_text_field', wp_unslash( $_POST['fields'] ) ) : [];
+    $author = isset( $_POST['author'] ) ? sanitize_text_field( wp_unslash( $_POST['author'] ) ) : '';
     $export_type     = isset( $_POST['export_type'] ) ? sanitize_text_field( $_POST['export_type'] ) : 'csv';
-
+	
     // Fetch media library data based on selected fields and author filter.
     $query_args = [
         'post_type'      => 'attachment',
@@ -94,7 +97,8 @@ function mediaexport_master_generate_csv( $data ) {
         fputcsv( $output, $row );
     }
 
-    fclose( $output );
+	global $wp_filesystem;
+	$wp_filesystem->close($file);
     exit;
 }
 
