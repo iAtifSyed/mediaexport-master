@@ -1,9 +1,19 @@
 <?php
+// Prevent direct access.
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
 
-// Enqueue Tailwind CSS for plugin-specific pages
-add_action( 'admin_enqueue_scripts', 'mediaexport_master_enqueue_scripts' );
-function mediaexport_master_enqueue_scripts( $hook ) {
-    if ( $hook === 'toplevel_page_mediaexport-master' ) {
-        wp_enqueue_style( 'tailwind-css', 'https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css', array(), '2.2.19' );
+function mediaexport_enqueue_scripts( $hook ) {
+    if ( 'media_page_mediaexport-master' !== $hook ) {
+        return;
     }
+    wp_enqueue_style( 'mediaexport-tailwind', 'https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css', [], MEDIAEXPORT_MASTER_VERSION );
+    wp_enqueue_script( 'mediaexport-script', MEDIAEXPORT_MASTER_URL . 'assets/js/mediaexport.js', [ 'jquery' ], MEDIAEXPORT_MASTER_VERSION, true );
+
+    // Add nonce for security.
+    wp_localize_script( 'mediaexport-script', 'mediaexport_vars', [
+        'ajax_url' => admin_url( 'admin-ajax.php' ),
+        'nonce'    => wp_create_nonce( 'mediaexport_nonce' ),
+    ] );
 }
