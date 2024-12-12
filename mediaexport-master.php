@@ -1,13 +1,30 @@
 <?php
 /**
  * Plugin Name: MediaExport Master
- * Plugin URI: https://envisionlab.github.io/mediaexport-master
- * Description: MediaExport Master is a powerful WordPress plugin that allows you to export your media library data with customizable metadata fields and filters.
- * Version: 1.0
- * Author: Atif Syed
- * Author URI: https://iatifsyed.github.io/
- * License: GPL2
+ * Plugin URI:  https://envisionlab.github.io/mediaexport-master
+ * Description: MediaExport Master is a powerful WordPress plugin that allows you to export your media library data with customizable metadata fields and filters. It can be very useful during migration, seo analysis and security audit.
+ * Version:     1.5
+ * Author:      Atif Syed
+ * Author URI:  https://iatifsyed.github.io/
+ * License:     GPLv2 or later
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain: mediaexport-master
+ *
+ * @package MediaExport Master
  */
+/*
+    Copyright (c) 2024- Atif Syed (contact : https://iatifsyed.github.io/)
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; version 2 of the License.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+ */
+
 
 if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly.
