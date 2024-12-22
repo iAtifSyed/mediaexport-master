@@ -39,7 +39,7 @@
 - **Hire Me**: [Hire me on a project](https://iatifsyed.github.io/)
 - **Donate**: [Buy me a Coffee](https://www.paypal.com/donate?business=atifsyedlive@gmail.com&item_name=Support+MediaExport+Master+Plugin)
 - **Leave a Rating**: [Rate on WordPress.org](https://wordpress.org/support/plugin/mediaexport-master/reviews/)
-- **Tweet Me**: [@YourTwitterHandle](https://twitter.com/iamatifsyed)
+- **Tweet Me**: [@Iamatifsyed(https://twitter.com/iamatifsyed)
 - **Support Ticket**: [Create Support Ticket](https://wordpress.org/support/plugin/mediaexport-master/reviews/)
 - **Email**: [Write me an Email](mailto:atifsyedlive@gmail.com)
 
